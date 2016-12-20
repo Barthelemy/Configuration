@@ -3,11 +3,9 @@
 ///
 /// \author Sylvain Chapeland, CERN
 
-#include <Configuration/Configuration.h>
-#include <stdio.h>
+#include <Configuration.h>
 #include <string>
-#include <Configuration/ConfigurationFactory.h>
-#include <unistd.h>
+#include <ConfigurationFactory.h>
 
 #define BOOST_TEST_MODULE hello test
 #define BOOST_TEST_MAIN

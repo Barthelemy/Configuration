@@ -5,7 +5,6 @@
 /// \author Pascal Boeschoten, CERN
 
 #include "FileConfiguration.h"
-#include <vector>
 #include <boost/property_tree/ini_parser.hpp>
 #include <boost/algorithm/string/predicate.hpp>
 

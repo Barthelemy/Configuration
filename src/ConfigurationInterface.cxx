@@ -3,7 +3,7 @@
 ///
 /// \author Pascal Boeschoten, CERN
 
-#include "Configuration/ConfigurationInterface.h"
+#include "ConfigurationInterface.h"
 #include <boost/lexical_cast.hpp>
 
 namespace AliceO2

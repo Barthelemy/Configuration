@@ -6,7 +6,7 @@
 #ifndef SRC_ETCDCONFIGURATION_H_
 #define SRC_ETCDCONFIGURATION_H_
 
-#include "Configuration/ConfigurationInterface.h"
+#include "ConfigurationInterface.h"
 #include <boost/scoped_ptr.hpp>
 
 namespace AliceO2

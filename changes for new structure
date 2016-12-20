@@ -1,0 +1,5 @@
+- move includes one level up
+- src and include : Change path to module's public headers.
+- O2Utils : add prefix AliceO2/modulename to the install headers
+- CMAkeLists in modules : add prefix AliceO2 to library name
+- Dependencies : add the missing prefixes

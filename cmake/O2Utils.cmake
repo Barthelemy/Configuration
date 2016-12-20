@@ -282,7 +282,8 @@ macro(O2_GENERATE_LIBRARY)
   install(TARGETS ${Int_LIB} DESTINATION lib)
 
   # Install all the public headers
-  install(DIRECTORY include/${MODULE_NAME} DESTINATION include)
+  string(REPLACE "AliceO2" "" RAW_MODULE_NAME ${MODULE_NAME})
+  install(DIRECTORY include/ DESTINATION include/AliceO2/${RAW_MODULE_NAME} FILES_MATCHING PATTERN "*.h" PATTERN "*.hxx")
 
   Set(LIBRARY_NAME)
   Set(DICTIONARY)

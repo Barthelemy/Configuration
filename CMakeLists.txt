@@ -59,7 +59,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -pedantic -Wextra -fPIC")
 # Module, library and executable definition
 ####################################
 
-set(MODULE_NAME "Configuration")
+set(MODULE_NAME "AliceO2Configuration")
 
 O2_SETUP(NAME ${MODULE_NAME})
 
@@ -72,8 +72,8 @@ set(SRCS
 
 # Produce the final Version.h using template Version.h.in and substituting variables.
 # We don't want to polute our source tree with it, thus putting it in binary tree.
-configure_file("include/${MODULE_NAME}/Version.h.in"
-        "${CMAKE_CURRENT_BINARY_DIR}/include/${MODULE_NAME}/Version.h"
+configure_file("include/Version.h.in"
+        "${CMAKE_CURRENT_BINARY_DIR}/include/Version.h"
         @ONLY)
 
 include_directories(
@@ -81,11 +81,11 @@ include_directories(
 )
 
 set(HEADERS # needed for the dictionary generation
-        "${CMAKE_CURRENT_BINARY_DIR}/include/${MODULE_NAME}/Version.h" # Generated header
-        include/${MODULE_NAME}/Configuration.h # Normal header
-        include/${MODULE_NAME}/ConfigurationInterface.h # Normal header
-        include/${MODULE_NAME}/ConfigurationFactory.h # Normal header
-        include/${MODULE_NAME}/FileConfiguration.h # Normal header
+        "${CMAKE_CURRENT_BINARY_DIR}/include/Version.h" # Generated header
+        include/Configuration.h # Normal header
+        include/ConfigurationInterface.h # Normal header
+        include/ConfigurationFactory.h # Normal header
+        include/FileConfiguration.h # Normal header
         )
 
 set(LIBRARY_NAME ${MODULE_NAME})

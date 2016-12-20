@@ -33,7 +33,7 @@ class ConfigurationInterface
     /// Puts a string into the configuration.
     /// \param path The path of the value
     /// \param value The value to put
-    virtual void putString(const std::string& path, const std::string& value) = 0;
+    virtual void putString(const  std::string & path, const std::string& value) = 0;
 
     /// Puts an integer value into the configuration.
     /// \param path The path of the value
@@ -53,7 +53,7 @@ class ConfigurationInterface
     /// Retrieves an integer value from the configuration.
     /// \param path The path of the value
     /// \return The retrieved value
-    virtual Optional<int> getInt(const std::string& path);
+    virtual Optional<int> getInt(const std::string& path2);
 
     /// Retrieves a floating point value from the configuration.
     /// \param path The path of the value

@@ -4,7 +4,7 @@
 /// \author Pascal Boeschoten, CERN
 
 #include <stdexcept>
-#include "Configuration/ConfigurationFactory.h"
+#include "ConfigurationFactory.h"
 #include "FileConfiguration.h"
 #ifdef ALICEO2_CONFIGURATION_BACKEND_ETCD_ENABLED
 # include "EtcdConfiguration.h"

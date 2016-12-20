@@ -8,7 +8,7 @@
 
 #include <string>
 #include <memory>
-#include "Configuration/ConfigurationInterface.h"
+#include "ConfigurationInterface.h"
 
 namespace AliceO2
 {

@@ -3,7 +3,7 @@
 ///
 /// \author Pascal Boeschoten (pascal.boeschoten@cern.ch)
 
-#include "Configuration/ConfigurationFactory.h"
+#include "ConfigurationFactory.h"
 #include <iostream>
 
 using std::cout;
